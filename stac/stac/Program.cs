@@ -56,7 +56,7 @@ namespace stac
             {
                 if (IsEmpty())
                     return "Empty"; //throw new Exception("Empty");
-                return string.Join(',', array.ToString()).Substring(0, Count * 2 - 1);
+                return string.Join(',', array).Substring(0, Count * 2 - 1);
             }
         }
         public interface IStack<T> {
